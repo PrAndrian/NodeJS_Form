@@ -13,7 +13,7 @@ var app = express();
     //     console.log('Data connected');
     //     // perform actions on the collection object
     //     client.close();
-    // });
+    // }); //nice 
 
 const url = "mongodb+srv://Happy:salut_1@cluster0.2oi0g.mongodb.net/testdb?retryWrites=true&w=majority";
 
@@ -103,5 +103,5 @@ app.delete('/form/delete/:id', function(req, res) {
 const port = process.env.PORT || 5000
 
 var server = app.listen(port, function () {
-    console.log('Running serveur at port 5000...')
+    console.log('Running serveur at port 5000...') 
 });
